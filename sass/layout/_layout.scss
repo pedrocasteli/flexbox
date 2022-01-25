@@ -1,0 +1,73 @@
+.navegacao {
+    display: flex;
+}
+
+.conteudo {
+    display: flex;
+    min-height: 100vh;
+    flex: 0 0 10%;
+    background-color: $cor-vertical;
+}
+
+.cabecalho {
+    background-color: $cor-horizontal;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    flex: 1 1 90%;
+    padding: 1rem;
+    align-items: center;
+
+    .caixa-icone__icone {
+        width: 3rem;
+        height: 3rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .buscar {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+        border-radius: 2rem;
+        margin-right: 2rem;
+        border: 0.1rem solid transparent;
+
+        &__icone {
+            width: 1.6rem;
+            height: 1.6rem;
+            fill: rgb(182, 182, 182);
+            order: -1;
+        }
+
+        &__input {
+            font-family: inherit;
+            font-size: 1.5rem;
+            padding: 0.8rem 0.5rem;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .nav {
+        display: flex;
+
+        &__perfil {
+            display: flex;
+        }
+    }
+}
+
+.nav__icone {
+    width: 3rem;
+    height: 3rem;
+}
+
+.nav__perfil-icone {
+    width: 3rem;
+    height: 3rem;
+}
