@@ -15,12 +15,14 @@
     justify-content: space-between;
     align-self: flex-start;
     flex: 1 1 90%;
-    padding: 1rem;
+    padding: 0rem 0rem 0rem 0.5rem;
     align-items: center;
+    border-bottom: 0.1rem solid rgb(194, 193, 193);
 
     .caixa-icone__icone {
-        width: 3rem;
-        height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        fill: rgb(80, 80, 80);
 
         &:hover {
             cursor: pointer;
@@ -32,10 +34,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0.2rem 1.2rem 0.2rem 1.2rem;
+        padding: 0rem 1.2rem 0 0.1rem;
         border-radius: 2rem;
-        margin-right: 2rem;
-        border: 0.1rem solid transparent;
+        // margin-right: 2rem;
+        flex: 0 0 20%;
 
         &__icone {
             width: 1.6rem;
@@ -46,28 +48,52 @@
 
         &__input {
             font-family: inherit;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             padding: 0.8rem 0.5rem;
             border: none;
             outline: none;
+            width: 90%;
         }
     }
 
     .nav {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0 0 13%;
+
+        &__icone {
+            width: 2.5rem;
+            height: 2.5rem;
+            fill: rgb(80, 80, 80);
+        }
 
         &__perfil {
             display: flex;
+            align-items: center;
+            padding: 1rem 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(236, 236, 236);
+            }
+
+            &-foto {
+                width: 3.5rem;
+                height: 3.5rem;
+                border-radius: 50%;
+            }
+
+            &-nome {
+                margin: 0 0.1rem 0 0.6rem;
+                font-size: 1.3rem;
+            }
+
+            &-icone {
+                width: 1.5rem;
+                height: 1.5rem;
+                fill: rgb(102, 102, 102);
+            }
         }
     }
-}
-
-.nav__icone {
-    width: 3rem;
-    height: 3rem;
-}
-
-.nav__perfil-icone {
-    width: 3rem;
-    height: 3rem;
 }
