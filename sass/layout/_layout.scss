@@ -1,99 +1,69 @@
-.navegacao {
+.container {
     display: flex;
+}
+
+.barra-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cor-vertical;
+    height: 100vh;
+    flex: 0 0 12%;
+}
+
+.logo {
+    margin: 1.5rem 0rem 2.9rem 0rem;
+    width: 85%;
+    height: 20%;
+    background-color: #749ed6;
+    border-radius: 50%;
+}
+
+.nav-lateral {
+    width: 100%;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+
+    &__link {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 0rem 1.5rem 2.2rem;
+        text-transform: uppercase;
+        color: $cor-texto;
+        font-weight: 500;
+        transition: background-color 0.1s;
+
+        &:not(:last-child) {
+            margin-bottom: 0.5rem;
+        }
+
+        &:hover {
+            background-color: $cor-vertical-hover;
+            color: $cor-texto-claro;
+        }
+    }
+
+    &__icone {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-right: 1.5rem;
+        fill: currentColor;
+    }
 }
 
 .conteudo {
     display: flex;
-    min-height: 100vh;
-    flex: 0 0 10%;
-    background-color: $cor-vertical;
+    flex-direction: column;
+    flex: 1;
 }
 
-.cabecalho {
+.barra-superior {
+    flex: 0 0 7%;
     background-color: $cor-horizontal;
-    display: flex;
-    justify-content: space-between;
-    align-self: flex-start;
-    flex: 1 1 90%;
-    padding: 0rem 0rem 0rem 0.5rem;
-    align-items: center;
-    border-bottom: 0.1rem solid rgb(194, 193, 193);
+}
 
-    .caixa-icone__icone {
-        width: 2.5rem;
-        height: 2.5rem;
-        fill: rgb(80, 80, 80);
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    .buscar {
-        background-color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0rem 1.2rem 0 0.1rem;
-        border-radius: 2rem;
-        // margin-right: 2rem;
-        flex: 0 0 20%;
-
-        &__icone {
-            width: 1.6rem;
-            height: 1.6rem;
-            fill: rgb(182, 182, 182);
-            order: -1;
-        }
-
-        &__input {
-            font-family: inherit;
-            font-size: 1.3rem;
-            padding: 0.8rem 0.5rem;
-            border: none;
-            outline: none;
-            width: 90%;
-        }
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex: 0 0 13%;
-
-        &__icone {
-            width: 2.5rem;
-            height: 2.5rem;
-            fill: rgb(80, 80, 80);
-        }
-
-        &__perfil {
-            display: flex;
-            align-items: center;
-            padding: 1rem 1rem;
-            cursor: pointer;
-
-            &:hover {
-                background-color: rgb(236, 236, 236);
-            }
-
-            &-foto {
-                width: 3.5rem;
-                height: 3.5rem;
-                border-radius: 50%;
-            }
-
-            &-nome {
-                margin: 0 0.1rem 0 0.6rem;
-                font-size: 1.3rem;
-            }
-
-            &-icone {
-                width: 1.5rem;
-                height: 1.5rem;
-                fill: rgb(102, 102, 102);
-            }
-        }
-    }
+.corpo {
+    background-color: $cor-horizontal-escura;
+    flex: 1;
 }

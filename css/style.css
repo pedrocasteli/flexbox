@@ -10,76 +10,60 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
 
-.navegacao {
+.container {
   display: flex; }
+
+.barra-lateral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #486182;
+  height: 100vh;
+  flex: 0 0 12%; }
+
+.logo {
+  margin: 1.5rem 0rem 2.9rem 0rem;
+  width: 85%;
+  height: 20%;
+  background-color: #749ed6;
+  border-radius: 50%; }
+
+.nav-lateral {
+  width: 100%;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem; }
+  .nav-lateral__link {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0rem 1.5rem 2.2rem;
+    text-transform: uppercase;
+    color: #e0e0e0;
+    font-weight: 500;
+    transition: background-color 0.1s; }
+    .nav-lateral__link:not(:last-child) {
+      margin-bottom: 0.5rem; }
+    .nav-lateral__link:hover {
+      background-color: #394b64;
+      color: #f3f3f3; }
+  .nav-lateral__icone {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 1.5rem;
+    fill: currentColor; }
 
 .conteudo {
   display: flex;
-  min-height: 100vh;
-  flex: 0 0 10%;
-  background-color: #333138; }
+  flex-direction: column;
+  flex: 1; }
 
-.cabecalho {
-  background-color: #f4f4fa;
-  display: flex;
-  justify-content: space-between;
-  align-self: flex-start;
-  flex: 1 1 90%;
-  padding: 0rem 0rem 0rem 0.5rem;
-  align-items: center;
-  border-bottom: 0.1rem solid #c2c1c1; }
-  .cabecalho .caixa-icone__icone {
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: #505050; }
-    .cabecalho .caixa-icone__icone:hover {
-      cursor: pointer; }
-  .cabecalho .buscar {
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0rem 1.2rem 0 0.1rem;
-    border-radius: 2rem;
-    flex: 0 0 20%; }
-    .cabecalho .buscar__icone {
-      width: 1.6rem;
-      height: 1.6rem;
-      fill: #b6b6b6;
-      order: -1; }
-    .cabecalho .buscar__input {
-      font-family: inherit;
-      font-size: 1.3rem;
-      padding: 0.8rem 0.5rem;
-      border: none;
-      outline: none;
-      width: 90%; }
-  .cabecalho .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 0 0 13%; }
-    .cabecalho .nav__icone {
-      width: 2.5rem;
-      height: 2.5rem;
-      fill: #505050; }
-    .cabecalho .nav__perfil {
-      display: flex;
-      align-items: center;
-      padding: 1rem 1rem;
-      cursor: pointer; }
-      .cabecalho .nav__perfil:hover {
-        background-color: #ececec; }
-      .cabecalho .nav__perfil-foto {
-        width: 3.5rem;
-        height: 3.5rem;
-        border-radius: 50%; }
-      .cabecalho .nav__perfil-nome {
-        margin: 0 0.1rem 0 0.6rem;
-        font-size: 1.3rem; }
-      .cabecalho .nav__perfil-icone {
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: #666666; }
+.barra-superior {
+  flex: 0 0 7%;
+  background-color: #f4f4fa; }
+
+.corpo {
+  background-color: #cdcdce;
+  flex: 1; }

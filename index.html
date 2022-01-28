@@ -8,112 +8,46 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
         <title>Flexbox</title>
     </head>
     <body>
-        <div class="navegacao">
-            <div class="conteudo">
-                <nav class="sidebar">
-                    <ul class="lista-sidebar">
-                        <li class="lista-sidebar-item">
-                            <svg class="icone-svg">
-                                <use
-                                    xlink:href="./img/sprite.svg#icon-opt"
-                                ></use>
-                            </svg>
-                            <span>Item lista</span>
-                        </li>
-                        <li class="lista-sidebar-item">
-                            <svg class="icone-svg">
-                                <use
-                                    xlink:href="./img/sprite.svg#icon-cloud"
-                                ></use>
-                            </svg>
-                            <span>Item lista</span>
-                        </li>
-                        <li class="lista-sidebar-item">
-                            <svg class="icone-svg">
-                                <use
-                                    xlink:href="./img/sprite.svg#icon-flag"
-                                ></use>
-                            </svg>
-                            <span>Item lista</span>
-                        </li>
-                        <li class="lista-sidebar-item">
-                            <svg class="icone-svg">
-                                <use
-                                    xlink:href="./img/sprite.svg#icon-next2"
-                                ></use>
-                            </svg>
-                            <span>Item lista</span>
-                        </li>
-                        <div class="lista-sidebar-item">
-                            <svg class="icone-svg">
-                                <use
-                                    xlink:href="./img/sprite.svg#icon-cloud"
-                                ></use>
-                            </svg>
-                            <span>Item lista</span>
-                        </div>
-                    </ul>
-                </nav>
-                <main class="resto"></main>
-            </div>
-            <header class="cabecalho">
-                <div class="caixa-icone">
-                    <svg class="caixa-icone__icone">
-                        <use xlink:href="img/sprite.svg#icon-menu"></use>
-                    </svg>
-                </div>
-                <form action="#" class="buscar">
-                    <input
-                        type="text"
-                        class="buscar__input"
-                        placeholder="Buscar..."
-                    />
-                    <svg class="buscar__icone">
-                        <use
-                            xlink:href="img/sprite.svg#icon-magnifying-glass"
-                        ></use>
-                    </svg>
-                </form>
-                <nav class="nav">
-                    <div class="nav__caixa-icone">
-                        <a href="#" class="nav__link">
-                            <svg class="nav__icone">
-                                <use
-                                    xlink:href="img/sprite.svg#icon-sweden"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="nav__caixa-icone">
-                        <a href="#" class="nav__link">
-                            <svg class="nav__icone">
-                                <use
-                                    xlink:href="img/sprite.svg#icon-bell"
-                                ></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="nav__perfil">
-                        <img
-                            src="./img/user.jpg"
-                            alt="Foto de usuário"
-                            class="nav__perfil-foto"
-                        />
-                        <span class="nav__perfil-nome">Usuário</span>
-                        <svg class="nav__perfil-icone">
-                            <use
-                                xlink:href="img/sprite.svg#icon-chevron-small-down"
-                            ></use>
+        <div class="container">
+            <div class="barra-lateral">
+                <div class="logo"></div>
+                <nav class="nav-lateral">
+                    <div class="nav-lateral__link">
+                        <svg class="nav-lateral__icone">
+                            <use xlink:href="./img/sprite.svg#icon-list2"></use>
                         </svg>
+                        <span>Detalhes</span>
+                    </div>
+                    <div class="nav-lateral__link">
+                        <svg class="nav-lateral__icone">
+                            <use xlink:href="./img/sprite.svg#icon-list2"></use>
+                        </svg>
+                        <span>Planejamento</span>
+                    </div>
+                    <div class="nav-lateral__link">
+                        <svg class="nav-lateral__icone">
+                            <use xlink:href="./img/sprite.svg#icon-list2"></use>
+                        </svg>
+                        <span>Resumo</span>
+                    </div>
+                    <div class="nav-lateral__link">
+                        <svg class="nav-lateral__icone">
+                            <use xlink:href="./img/sprite.svg#icon-list2"></use>
+                        </svg>
+                        <span>Pedidos</span>
                     </div>
                 </nav>
-            </header>
+            </div>
+            <div class="conteudo">
+                <div class="barra-superior">Barra superior</div>
+                <div class="corpo">Corpo</div>
+            </div>
         </div>
     </body>
 </html>
